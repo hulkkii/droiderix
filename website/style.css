@@ -304,6 +304,43 @@ section {
     gap: 1rem;
 }
 
+.section-screens {
+    max-width: 980px;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.screenshot-panel {
+    overflow: hidden;
+    padding: 0;
+}
+
+.screenshot-panel-wide {
+    grid-column: span 2;
+}
+
+.screenshot-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--bg-strong);
+    border-bottom: 1px solid var(--line-weak);
+}
+
+.screenshot-panel figcaption {
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.screenshot-panel p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
 /* Grid Sections (Bento styling to match native app utility) */
 .section-title-wrap {
     margin-bottom: 2rem;
@@ -483,6 +520,8 @@ section {
     .content-scroll { padding: 1.5rem 1rem; }
     .app-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .hero-actions { flex-wrap: wrap; }
+    .screenshot-grid { grid-template-columns: 1fr; }
+    .screenshot-panel-wide { grid-column: span 1; }
     .section-title-brand {
         flex-direction: row;
         align-items: center;
