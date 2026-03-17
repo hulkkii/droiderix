@@ -456,11 +456,36 @@ section {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .app-layout { flex-direction: column; }
+    html, body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .app-layout {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
     .sidebar { display: none; }
+    .main-content {
+        min-height: 100vh;
+    }
+    .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .content-scroll {
+        overflow: visible;
+        flex: initial;
+    }
     .content-scroll { padding: 1.5rem 1rem; }
     .app-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .hero-actions { flex-wrap: wrap; }
-    .section-title-brand { flex-direction: column; }
+    .section-title-brand {
+        flex-direction: row;
+        align-items: center;
+    }
     .section-logo-mark { width: 72px; }
 }

@@ -50,7 +50,7 @@
                 <section id="hero" class="section-hero fade-in">
                     <div class="hero-badge">ANDROID-INTEGRATED AI AGENT</div>
                     <h1>Agent-powered control of your Android.</h1>
-                    <p class="hero-subtext">Control your device through structured workflows and natural language. Droiderix runs agent tasks inside local and remote workspaces, executes commands through shell and tools, and automates workflows with Android background services.</p>
+                    <p class="hero-subtext">Generate runnable mini-apps from natural language, then use the same agent runtime to operate them inside local or remote workspaces. Droiderix combines mini-app creation, shell tooling, and Android background services in one app, using your existing Codex or GitHub Copilot subscription for inference.</p>
                     <div class="hero-actions">
                         <a href="#pricing" class="btn btn-primary">Initialize Access</a>
                         <a href="#capabilities" class="btn btn-secondary">Explore Capabilities</a>
@@ -60,13 +60,21 @@
                 <section id="capabilities" class="section-grid fade-in stagger-1">
                     <div class="section-title-wrap section-title-brand">
                         <div>
-                            <h2>Core Architecture</h2>
-                            <p class="text-muted">Built around workspace-scoped execution, persistent sessions, and Android-native service hooks instead of vague autonomy claims.</p>
+                            <h2>Mini-Apps + Agent Runtime</h2>
+                            <p class="text-muted">Droiderix stands out by pairing workspace-scoped agent execution with generated mini-app workflows that run inside the app host.</p>
                         </div>
                         <img src="droiderix-logo-gray.png" alt="Droiderix logo" class="section-logo-mark">
                     </div>
                     
                     <div class="grid-container">
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 5H16M8 9H16M8 13H12M6 3H18A2 2 0 0 1 20 5V19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19V5A2 2 0 0 1 6 3Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Generate Runnable Mini-Apps</h3>
+                            <p>Use the agent to create mini-app workflows inside your workspace, then discover, validate, launch, and reuse them directly in the Droiderix runtime.</p>
+                        </div>
+
                         <div class="panel capability-panel">
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2L14.5 22M5 8l-3 4 3 4M19 8l3 4-3 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -88,7 +96,7 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
                             <h3>Pluggable AI Backends</h3>
-                            <p>Choose between local, Codex, and GitHub Copilot agent runtimes depending on the workspace and task.</p>
+                            <p>Run a local agent harness inside the Android app and connect it to inference from your existing Codex or GitHub Copilot subscription. One of those subscriptions is required to use Droiderix.</p>
                         </div>
 
                         <div class="panel capability-panel">
@@ -120,7 +128,7 @@
                 <section id="pricing" class="section-pricing fade-in stagger-2">
                     <div class="section-title-wrap">
                         <h2>Access Plans</h2>
-                        <p class="text-muted">Includes a 7-day trial. Purchases are handled through Google Play in-app billing inside the Android app.</p>
+                        <p class="text-muted">Includes a 7-day trial. Purchases are handled through Google Play in-app billing inside the Android app. Droiderix also requires your own Codex or GitHub Copilot subscription for inference.</p>
                     </div>
 
                     <div class="pricing-container">
@@ -162,7 +170,7 @@
                 
                 <footer class="app-footer">
                     <div>DROIDERIX</div>
-                    <div class="text-muted">Workspace-based Android agent runtime with local persistence, shell and SSH tooling, and scheduled automation.<br>Built on .NET MAUI / Blazor.</div>
+                    <div class="text-muted">Workspace-based Android agent runtime with local persistence, shell and SSH tooling, and scheduled automation.<br>Built on .NET MAUI / Blazor. iOS support is planned for the future, with a more limited feature set due to platform restrictions.</div>
                 </footer>
             </div>
         </main>
