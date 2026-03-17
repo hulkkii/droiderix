@@ -235,7 +235,10 @@
                     });
                 }
             });
-        }, { threshold: 0.5 });
+        }, {
+            threshold: 0.12,
+            rootMargin: "0px 0px -8% 0px"
+        });
 
         document.querySelectorAll('section').forEach((section) => {
             observer.observe(section);
