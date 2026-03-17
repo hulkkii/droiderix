@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droiderix | Android-Integrated AI Agent</title>
+    <link rel="icon" type="image/png" href="droiderix-logo-gray.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Inter to strictly match the Android app's typography as requested -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-mark" aria-hidden="true">&lt;D/&gt;</span>
+                    <span>Droiderix.</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-group-title">Overview</div>
+                <a href="#hero" class="nav-item active">Platform</a>
+                <a href="#capabilities" class="nav-item">Capabilities</a>
+                
+                <div class="nav-group-title">Subscriptions</div>
+                <a href="#pricing" class="nav-item">Access Tiers</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>System v1.0 Ready</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div class="breadcrumb">DROIDERIX / <span class="text-strong">PLATFORM</span></div>
+                <div class="topbar-actions">
+                    <a href="#pricing" class="btn btn-primary btn-sm">Start Trial</a>
+                </div>
+            </header>
+
+            <div class="content-scroll">
+                <section id="hero" class="section-hero fade-in">
+                    <div class="hero-badge">ANDROID-INTEGRATED AI AGENT</div>
+                    <h1>Agent-powered control of your Android.</h1>
+                    <p class="hero-subtext">Control your device through structured workflows and natural language. Droiderix runs agent tasks inside local and remote workspaces, executes commands through shell and tools, and automates workflows with Android background services.</p>
+                    <div class="hero-actions">
+                        <a href="#pricing" class="btn btn-primary">Initialize Access</a>
+                        <a href="#capabilities" class="btn btn-secondary">Explore Capabilities</a>
+                    </div>
+                </section>
+
+                <section id="capabilities" class="section-grid fade-in stagger-1">
+                    <div class="section-title-wrap section-title-brand">
+                        <div>
+                            <h2>Core Architecture</h2>
+                            <p class="text-muted">Built around workspace-scoped execution, persistent sessions, and Android-native service hooks instead of vague autonomy claims.</p>
+                        </div>
+                        <img src="droiderix-logo-gray.png" alt="Droiderix logo" class="section-logo-mark">
+                    </div>
+                    
+                    <div class="grid-container">
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2L14.5 22M5 8l-3 4 3 4M19 8l3 4-3 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Workspace Architecture</h3>
+                            <p>Operate inside local app-data workspaces or configured SSH workspaces, each with persistent chat sessions and scoped file access.</p>
+                        </div>
+
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 17L10 11L4 5M12 19H20" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Shell &amp; SSH Access</h3>
+                            <p>Execute commands through Termux integration for local shell tasks or keep remote SSH terminal sessions active with foreground service support.</p>
+                        </div>
+
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Pluggable AI Backends</h3>
+                            <p>Choose between local, Codex, and GitHub Copilot agent runtimes depending on the workspace and task.</p>
+                        </div>
+
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6V12L16 14M22 12A10 10 0 1 1 2 12A10 10 0 0 1 22 12Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Scheduled Automation</h3>
+                            <p>Launch agent runs through scheduled jobs and background services, with persisted run state and user-visible notifications while work continues.</p>
+                        </div>
+
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4H19V20L12 16L5 20V4Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>Local-First Persistence</h3>
+                            <p>Chats, runs, schedules, and workspace metadata are stored on-device with SQLite and secure storage rather than depending on a constant cloud session.</p>
+                        </div>
+
+                        <div class="panel capability-panel">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7V3M16 7V3M4 11H20M6 5H18A2 2 0 0 1 20 7V19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19V7A2 2 0 0 1 6 5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3>System Integrations</h3>
+                            <p>Connect workflows to Android notifications, calendar access, file tools, git operations, and mini-app runtime features inside the existing app host.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="pricing" class="section-pricing fade-in stagger-2">
+                    <div class="section-title-wrap">
+                        <h2>Access Plans</h2>
+                        <p class="text-muted">Includes a 7-day trial. Purchases are handled through Google Play in-app billing inside the Android app.</p>
+                    </div>
+
+                    <div class="pricing-container">
+                        <div class="panel pricing-panel">
+                            <div class="tier-header">Monthly</div>
+                            <div class="tier-price">€4.99<span class="period">/mo</span></div>
+                            <ul class="tier-features">
+                                <li>Same app access as every plan</li>
+                                <li>Google Play in-app purchase</li>
+                                <li>7-day trial included</li>
+                            </ul>
+                            <a href="https://play.google.com/store" class="btn btn-secondary w-full">View on Play Store</a>
+                        </div>
+
+                        <div class="panel pricing-panel featured-panel">
+                            <div class="featured-badge">Active Recommendation</div>
+                            <div class="tier-header">Annual</div>
+                            <div class="tier-price">€39.99<span class="period">/yr</span></div>
+                            <ul class="tier-features">
+                                <li>Same app access as every plan</li>
+                                <li>Google Play in-app purchase</li>
+                                <li>Best value for long-term use</li>
+                            </ul>
+                            <a href="https://play.google.com/store" class="btn btn-primary w-full">View on Play Store</a>
+                        </div>
+
+                        <div class="panel pricing-panel">
+                            <div class="tier-header">Lifetime</div>
+                            <div class="tier-price">€79.00<span class="period">/once</span></div>
+                            <ul class="tier-features">
+                                <li>Same app access as every plan</li>
+                                <li>Google Play in-app purchase</li>
+                                <li>Single one-time payment</li>
+                            </ul>
+                            <a href="https://play.google.com/store" class="btn btn-secondary w-full">View on Play Store</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="app-footer">
+                    <div>DROIDERIX</div>
+                    <div class="text-muted">Workspace-based Android agent runtime with local persistence, shell and SSH tooling, and scheduled automation.<br>Built on .NET MAUI / Blazor.</div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <!-- Minimal JS to handle active link state -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Update navigation automatically
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('.nav-item').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

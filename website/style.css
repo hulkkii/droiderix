@@ -1,0 +1,466 @@
+/* Extracted values from Android App src/DroidixAgent/wwwroot/css/app.css to match exactly */
+:root {
+    color-scheme: dark;
+
+    /* ── backgrounds ── */
+    --bg: #131010;
+    --bg-alt: #1c1717;
+    --bg-strong: #151313;
+    --bg-stronger: #191515;
+    --panel: #1b1818;
+    --panel-muted: #171414;
+
+    /* ── borders ── */
+    --line: rgba(247, 236, 236, 0.25);
+    --line-strong: rgba(247, 236, 236, 0.35);
+    --line-weak: rgba(247, 236, 236, 0.15);
+
+    /* ── text ── */
+    --text: rgba(252, 249, 249, 0.70);
+    --text-muted: rgba(250, 245, 244, 0.40);
+    --text-strong: rgba(253, 251, 251, 0.94);
+
+    /* ── accent ── */
+    --accent: #034cff;
+    --accent-strong: #89b5ff;
+    --accent-soft: rgba(3, 76, 255, 0.15);
+
+    /* ── radii ── */
+    --radius-xs: 0.125rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.625rem;
+
+    /* ── buttons ── */
+    --btn-primary-bg: #f1ecec;
+    --btn-primary-text: #131010;
+    --btn-secondary-bg: #231f1f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    font-family: "Inter", -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+/* Typography Overrides */
+h1, h2, h3 {
+    color: var(--text-strong);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.text-strong { color: var(--text-strong); }
+.text-muted { color: var(--text-muted); }
+
+/* Layout Shell */
+.app-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 260px;
+    background: var(--bg-strong);
+    border-right: 1px solid var(--line-weak);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    height: 56px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--line-weak);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-strong);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.logo-mark {
+    color: var(--accent-strong);
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.sidebar-nav {
+    padding: 1rem 0.75rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.nav-group-title {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin: 1.5rem 0.5rem 0.5rem;
+}
+
+.sidebar-nav .nav-group-title:first-child {
+    margin-top: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    color: var(--text);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.125rem;
+    transition: all 0.1s ease;
+}
+
+.nav-item:hover {
+    background: var(--bg-stronger);
+    color: var(--text-strong);
+}
+
+.nav-item.active {
+    background: var(--panel-muted);
+    color: var(--text-strong);
+    border: 1px solid var(--line-weak);
+}
+
+.sidebar-footer {
+    padding: 1rem;
+    border-top: 1px solid var(--line-weak);
+    font-size: 0.75rem;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+}
+
+/* Main Content Area */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: var(--bg);
+}
+
+/* Topbar */
+.topbar {
+    height: 56px;
+    border-bottom: 1px solid var(--line-weak);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background: var(--bg);
+}
+
+.breadcrumb {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+/* Content Scrollable */
+.content-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem 1.5rem 4rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto 6rem;
+}
+
+/* Base Panel Component */
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--line-weak);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border: 1px solid transparent;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.btn-primary:hover {
+    background: var(--text-strong);
+}
+
+.btn-secondary {
+    background: var(--btn-secondary-bg);
+    color: var(--text-strong);
+    border-color: var(--line-weak);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-stronger);
+    border-color: var(--line-strong);
+}
+
+/* Hero Section */
+.hero-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-xs);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtext {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Grid Sections (Bento styling to match native app utility) */
+.section-title-wrap {
+    margin-bottom: 2rem;
+}
+
+.section-title-brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.section-logo-mark {
+    width: 96px;
+    height: auto;
+    flex: 0 0 auto;
+    opacity: 0.4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.capability-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-strong);
+    border: 1px solid var(--line-weak);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-strong);
+    margin-bottom: 1rem;
+}
+
+.capability-panel p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0;
+    flex: 1;
+}
+
+/* Pricing */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.pricing-panel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.featured-panel {
+    border-color: var(--accent);
+    background: var(--panel-muted);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: 1.5rem;
+    background: var(--accent);
+    color: white;
+    font-size: 0.65rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: var(--radius-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tier-header {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.tier-price {
+    font-size: 2rem;
+    color: var(--text-strong);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line-weak);
+    padding-bottom: 1.5rem;
+}
+
+.period {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.tier-features {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex: 1;
+}
+
+.tier-features li {
+    font-size: 0.875rem;
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text);
+}
+
+.tier-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent-strong);
+    font-weight: bold;
+}
+
+/* Footer */
+.app-footer {
+    border-top: 1px solid var(--line-weak);
+    padding: 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.75rem;
+}
+
+/* Interactions / Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .app-layout { flex-direction: column; }
+    .sidebar { display: none; }
+    .content-scroll { padding: 1.5rem 1rem; }
+    .app-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .hero-actions { flex-wrap: wrap; }
+    .section-title-brand { flex-direction: column; }
+    .section-logo-mark { width: 72px; }
+}
