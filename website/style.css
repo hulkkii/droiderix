@@ -305,7 +305,7 @@ section {
 }
 
 .section-screens {
-    max-width: 980px;
+    max-width: 760px;
 }
 
 .screenshot-grid {
@@ -317,15 +317,13 @@ section {
 .screenshot-panel {
     overflow: hidden;
     padding: 0;
-}
-
-.screenshot-panel-wide {
-    grid-column: span 2;
+    align-self: start;
 }
 
 .screenshot-image {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     background: var(--bg-strong);
     border-bottom: 1px solid var(--line-weak);
@@ -521,7 +519,6 @@ section {
     .app-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .hero-actions { flex-wrap: wrap; }
     .screenshot-grid { grid-template-columns: 1fr; }
-    .screenshot-panel-wide { grid-column: span 1; }
     .section-title-brand {
         flex-direction: row;
         align-items: center;
