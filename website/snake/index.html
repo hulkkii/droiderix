@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Snake 3D</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar compact-topbar">
+      <div>
+        <p class="eyebrow">Arcade</p>
+        <h1>Snake 3D</h1>
+      </div>
+      <button id="pauseBtn" class="ghost-button compact-button" type="button">Pause</button>
+    </header>
+
+    <section class="stats-card compact-stats" aria-label="Game stats">
+      <div>
+        <span class="label">Score</span>
+        <strong id="scoreValue">0</strong>
+      </div>
+      <div>
+        <span class="label">Best</span>
+        <strong id="bestValue">0</strong>
+      </div>
+      <div>
+        <span class="label">Level</span>
+        <strong id="speedValue">1x</strong>
+      </div>
+    </section>
+
+    <section class="game-panel">
+      <div id="canvasWrap" class="canvas-wrap" aria-label="3D snake board"></div>
+      <div class="overlay" id="overlay">
+        <div class="overlay-card">
+          <h2 id="overlayTitle">Tap Play</h2>
+          <p id="overlayText">Steer the snake in 3D, eat glowing fruit, and avoid the walls and yourself.</p>
+          <button id="playBtn" class="primary-button" type="button">Play</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls-card" aria-label="Controls">
+      <button id="upBtn" class="control-button up" type="button" aria-label="Move up">▲</button>
+      <div class="direction-row">
+        <button id="leftBtn" class="control-button" type="button" aria-label="Move left">◀</button>
+        <button id="downBtn" class="control-button" type="button" aria-label="Move down">▼</button>
+        <button id="rightBtn" class="control-button" type="button" aria-label="Move right">▶</button>
+      </div>
+    </section>
+
+    <section class="tips-card">
+      <p>Use the on-screen arrows or swipe. Keyboard arrows and WASD also work.</p>
+      <button id="restartBtn" class="secondary-button" type="button">Restart</button>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
