@@ -26,6 +26,7 @@
                 <a href="#hero" class="nav-item active">Platform</a>
                 <a href="#screens" class="nav-item">Screens</a>
                 <a href="#capabilities" class="nav-item">Capabilities</a>
+                <a href="#comparison" class="nav-item">Comparison</a>
                 
                 <div class="nav-group-title">Subscriptions</div>
                 <a href="#pricing" class="nav-item">Access Tiers</a>
@@ -64,38 +65,41 @@
                         <p class="text-muted">A quick look at the workspace UI, mini-app generation flow, and generated mini-app runtime inside Droiderix.</p>
                     </div>
 
-                    <div class="screenshot-grid">
-                        <figure class="panel screenshot-panel">
+                    <div class="screenshot-stack" aria-label="Droiderix app screenshots">
+                        <figure class="panel screenshot-panel screenshot-panel-1">
                             <img src="screenshots/app-grid.jpg" alt="Droiderix workspace overview" class="screenshot-image">
-                            <figcaption>
-                                <h3>Workspace Overview</h3>
-                                <p>Browse core surfaces from the Android app shell, including chats, files, generated mini-apps, and settings.</p>
-                            </figcaption>
                         </figure>
 
-                        <figure class="panel screenshot-panel">
+                        <figure class="panel screenshot-panel screenshot-panel-2">
                             <img src="screenshots/simple-chat.jpg" alt="Droiderix chat session" class="screenshot-image">
-                            <figcaption>
-                                <h3>Agent Chat</h3>
-                                <p>Run tasks through workspace-scoped chat sessions backed by your own Codex or GitHub Copilot access.</p>
-                            </figcaption>
                         </figure>
 
-                        <figure class="panel screenshot-panel">
+                        <figure class="panel screenshot-panel screenshot-panel-3">
                             <img src="screenshots/mini-app-generator.jpg" alt="Droiderix mini-app generator" class="screenshot-image">
-                            <figcaption>
-                                <h3>Mini-App Generator</h3>
-                                <p>Turn natural-language requests into runnable mini-app workflows inside the app runtime.</p>
-                            </figcaption>
                         </figure>
 
-                        <figure class="panel screenshot-panel">
+                        <figure class="panel screenshot-panel screenshot-panel-4">
                             <img src="screenshots/mini-app-snake-game.jpg" alt="Generated mini-app running in Droiderix" class="screenshot-image">
-                            <figcaption>
-                                <h3>Generated Runtime</h3>
-                                <p>Launch and reuse generated mini-apps directly inside Droiderix without leaving the workspace.</p>
-                            </figcaption>
                         </figure>
+                    </div>
+
+                    <div class="screenshot-notes">
+                        <div class="panel screenshot-note">
+                            <h3>Workspace Overview</h3>
+                            <p>Browse core surfaces from the Android app shell, including chats, files, generated mini-apps, and settings.</p>
+                        </div>
+                        <div class="panel screenshot-note">
+                            <h3>Agent Chat</h3>
+                            <p>Run tasks through workspace-scoped chat sessions backed by your own Codex or GitHub Copilot access.</p>
+                        </div>
+                        <div class="panel screenshot-note">
+                            <h3>Mini-App Generator</h3>
+                            <p>Turn natural-language requests into runnable mini-app workflows inside the app runtime.</p>
+                        </div>
+                        <div class="panel screenshot-note">
+                            <h3>Generated Runtime</h3>
+                            <p>Launch and reuse generated mini-apps directly inside Droiderix without leaving the workspace.</p>
+                        </div>
                     </div>
                 </section>
 
@@ -164,6 +168,91 @@
                             <h3>System Integrations</h3>
                             <p>Connect workflows to Android notifications, calendar access, file tools, git operations, and mini-app runtime features inside the existing app host.</p>
                         </div>
+                    </div>
+                </section>
+
+                <section id="comparison" class="section-comparison fade-in stagger-2">
+                    <div class="section-title-wrap">
+                        <h2>OpenClaw vs Droiderix</h2>
+                        <p class="text-muted">Different products, different strengths. OpenClaw is positioned as a personal AI assistant you use through chat apps, while Droiderix focuses on controlled Android-native workflows, workspaces, and mini-app generation on the device you already carry.</p>
+                    </div>
+
+                    <div class="comparison-highlights">
+                        <div class="panel comparison-highlight comparison-highlight-primary">
+                            <div class="comparison-kicker">Why Droiderix</div>
+                            <h3>Use your phone as the agent host</h3>
+                            <p>No extra Mac mini, PC, or server to keep online. Droiderix runs the local agent harness inside your Android app and connects it to your existing Codex or GitHub Copilot subscription.</p>
+                        </div>
+
+                        <div class="panel comparison-highlight">
+                            <div class="comparison-kicker">More Controlled</div>
+                            <h3>Structured execution instead of a loose always-on assistant</h3>
+                            <p>Droiderix centers workspaces, explicit runs, scheduled jobs, and Android services. That gives users tighter control over what runs, when it runs, and where it can operate.</p>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table-wrap panel">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>OpenClaw</th>
+                                    <th class="comparison-droiderix-head">Droiderix</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Primary model</td>
+                                    <td>Messaging-first personal assistant</td>
+                                    <td class="comparison-droiderix-cell">Android-integrated agent runtime</td>
+                                </tr>
+                                <tr>
+                                    <td>Main interface</td>
+                                    <td>WhatsApp, Telegram, and other chat apps</td>
+                                    <td class="comparison-droiderix-cell">Dedicated Android app with chats, files, mini-apps, and settings</td>
+                                </tr>
+                                <tr>
+                                    <td>Autonomy style</td>
+                                    <td>Always-on assistant behavior</td>
+                                    <td class="comparison-droiderix-cell">User-driven runs plus scheduled automation</td>
+                                </tr>
+                                <tr>
+                                    <td>Where it runs</td>
+                                    <td>Computer or server that you host</td>
+                                    <td class="comparison-droiderix-cell">Android device with local and SSH workspaces</td>
+                                </tr>
+                                <tr>
+                                    <td>Standout feature</td>
+                                    <td>Chat-based assistant that acts through connected services</td>
+                                    <td class="comparison-droiderix-cell">Generate and run mini-app workflows directly inside the Android app</td>
+                                </tr>
+                                <tr>
+                                    <td>System integration</td>
+                                    <td>Email, calendar, and chat-app workflows</td>
+                                    <td class="comparison-droiderix-cell">Termux shell, SSH, notifications, calendar, files, git, and scheduled runs</td>
+                                </tr>
+                                <tr>
+                                    <td>Execution model</td>
+                                    <td>General assistant acting through connected tools</td>
+                                    <td class="comparison-droiderix-cell">Workspace-scoped execution with explicit tools and services</td>
+                                </tr>
+                                <tr>
+                                    <td>Setup model</td>
+                                    <td>Connects to external LLMs</td>
+                                    <td class="comparison-droiderix-cell">Local Android agent harness using your Codex or GitHub Copilot subscription</td>
+                                </tr>
+                                <tr>
+                                    <td>Hardware overhead</td>
+                                    <td>Requires a separate hosted machine or always-on computer</td>
+                                    <td class="comparison-droiderix-cell">Runs on the Android phone you already use every day</td>
+                                </tr>
+                                <tr>
+                                    <td>Control posture</td>
+                                    <td>Assistant-first convenience</td>
+                                    <td class="comparison-droiderix-cell">More controlled execution through workspaces, tools, and explicit run flow</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
 

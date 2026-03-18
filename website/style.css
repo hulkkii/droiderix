@@ -305,19 +305,45 @@ section {
 }
 
 .section-screens {
-    max-width: 760px;
+    max-width: 980px;
 }
 
-.screenshot-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+.screenshot-stack {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem 0 0;
+    overflow: visible;
 }
 
 .screenshot-panel {
     overflow: hidden;
     padding: 0;
     align-self: start;
+    flex: 0 0 220px;
+    position: relative;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.screenshot-panel + .screenshot-panel {
+    margin-left: -28px;
+}
+
+.screenshot-panel-1 {
+    z-index: 1;
+}
+
+.screenshot-panel-2 {
+    z-index: 2;
+    transform: translateY(12px);
+}
+
+.screenshot-panel-3 {
+    z-index: 3;
+}
+
+.screenshot-panel-4 {
+    z-index: 4;
+    transform: translateY(12px);
 }
 
 .screenshot-image {
@@ -326,14 +352,20 @@ section {
     max-width: 100%;
     height: auto;
     background: var(--bg-strong);
-    border-bottom: 1px solid var(--line-weak);
 }
 
-.screenshot-panel figcaption {
-    padding: 1rem 1.25rem 1.25rem;
+.screenshot-notes {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.25rem;
 }
 
-.screenshot-panel p {
+.screenshot-note {
+    padding: 1rem;
+}
+
+.screenshot-note p {
     margin: 0;
     font-size: 0.875rem;
     color: var(--text-muted);
@@ -387,6 +419,104 @@ section {
     color: var(--text-muted);
     margin: 0;
     flex: 1;
+}
+
+.comparison-highlights {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.75rem;
+}
+
+.comparison-highlight {
+    padding: 1.75rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+}
+
+.comparison-highlight-primary {
+    border-color: rgba(3, 76, 255, 0.45);
+    background:
+        radial-gradient(circle at top left, rgba(3, 76, 255, 0.18), transparent 52%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
+}
+
+.comparison-kicker {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--line-weak);
+    color: var(--accent-strong);
+    background: rgba(3, 76, 255, 0.12);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.comparison-highlight h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.comparison-highlight p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.comparison-table-wrap {
+    overflow-x: auto;
+    padding: 0;
+    margin-top: 0.25rem;
+    border-color: rgba(3, 76, 255, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+.comparison-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--line-weak);
+}
+
+.comparison-table th {
+    color: var(--text-strong);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: var(--panel-muted);
+}
+
+.comparison-droiderix-head {
+    color: var(--accent-strong);
+    background: linear-gradient(180deg, rgba(3, 76, 255, 0.18), rgba(3, 76, 255, 0.08));
+}
+
+.comparison-table td:first-child,
+.comparison-table th:first-child {
+    width: 22%;
+}
+
+.comparison-table td {
+    font-size: 0.875rem;
+    color: var(--text);
+}
+
+.comparison-droiderix-cell {
+    background: rgba(3, 76, 255, 0.08);
+    color: var(--text-strong);
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: 0;
 }
 
 /* Pricing */
@@ -518,7 +648,30 @@ section {
     .content-scroll { padding: 1.5rem 1rem; }
     .app-footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .hero-actions { flex-wrap: wrap; }
-    .screenshot-grid { grid-template-columns: 1fr; }
+    .section-screens { max-width: 760px; }
+    .screenshot-stack {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        overflow: visible;
+        padding: 0;
+    }
+    .screenshot-panel {
+        flex-basis: auto;
+        box-shadow: none;
+        transform: none;
+    }
+    .screenshot-panel + .screenshot-panel {
+        margin-left: 0;
+    }
+    .screenshot-notes {
+        grid-template-columns: 1fr;
+    }
+    .comparison-highlights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
     .section-title-brand {
         flex-direction: row;
         align-items: center;
