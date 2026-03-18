@@ -87,8 +87,8 @@ function setButtonGlow(button, active) {
 }
 
 function resetCamera() {
-  cameraAngle = -0.65;
-  cameraTargetAngle = -0.65;
+  cameraAngle = 0;
+  cameraTargetAngle = 0;
 }
 
 function vibrate(pattern) {
@@ -217,7 +217,6 @@ function createBoard() {
   const wallMaterial = new THREE.MeshStandardMaterial({ color: 0x0d1a2c, roughness: 0.85, metalness: 0.04, emissive: 0x0a1423, emissiveIntensity: 0.45 });
   const wallGeometry = new THREE.BoxGeometry(GRID_SIZE + 1.6, 1.1, 0.35);
   const sideGeometry = new THREE.BoxGeometry(0.35, 1.1, GRID_SIZE + 1.6);
-
   const northWall = new THREE.Mesh(wallGeometry, wallMaterial);
   northWall.position.set(0, BOARD_Y + 0.53, -GRID_SIZE / 2 - 0.85);
   const southWall = northWall.clone();
