@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy policy for the Droiderix Android Play Store V1 release.">
+    <title>Privacy Policy | Droiderix</title>
+    <link rel="icon" type="image/png" href="droiderix-logo-gray.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a class="logo" href="index.html">
+                    <span class="logo-mark" aria-hidden="true">&lt;D/&gt;</span>
+                    <span>Droiderix.</span>
+                </a>
+            </div>
+            <nav class="sidebar-nav" aria-label="Legal navigation">
+                <div class="nav-group-title">Legal</div>
+                <a href="privacy.html" class="nav-item active" aria-current="page">Privacy Policy</a>
+                <a href="index.html" class="nav-item">Back to Droiderix</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <div class="status-dot"></div>
+                    <span>Play Store V1</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div class="breadcrumb">DROIDERIX / <span class="text-strong">PRIVACY</span></div>
+                <a href="index.html" class="btn btn-secondary btn-sm">Back to site</a>
+            </header>
+
+            <div class="content-scroll">
+                <article class="legal-page">
+                    <header class="legal-header">
+                        <div class="legal-effective-date">Effective July 10, 2026</div>
+                        <h1>Privacy Policy</h1>
+                        <p class="legal-summary">Droiderix is local-first. We do not operate a Droiderix account, inference proxy, analytics service, or backend that receives your prompts, files, conversations, credentials, or model output.</p>
+                    </header>
+
+                    <section class="legal-section">
+                        <h2>Scope</h2>
+                        <p>This policy covers the Droiderix Android Play Store V1 release, package <code>com.droiderix.app</code>. Data can leave your device when you choose hosted inference, use a network tool, approve an external Mini App source, install a local model, open an external link, or export or share data.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Data stored on your device</h2>
+                        <p>Droiderix stores local workspaces and files, chat history, drafts, run state, agent memories, settings, Mini App permissions, and installed local models in app-managed storage.</p>
+                        <p>Provider authentication tokens and API keys use Android secure storage. Android automatic app backup is disabled. Droiderix creates an export file only when you request one; exported and shared files are then under your control.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Hosted inference providers</h2>
+                        <p>When you select ChatGPT or Opper Wallet, the app connects directly to that provider. A request can include your prompt, relevant conversation history, agent instructions, model and runtime settings, tool definitions and results, attachments, and file contents the agent reads. Droiderix does not receive or proxy the request.</p>
+                        <p>Opper Wallet is an inference gateway and may route requests to your selected underlying model provider. Provider retention, training, regional processing, and account practices are controlled by that provider.</p>
+                        <ul>
+                            <li><a href="https://openai.com/policies/eu-privacy-policy/">OpenAI Europe Privacy Policy</a></li>
+                            <li><a href="https://openai.com/policies/eu-terms-of-use/">OpenAI Europe Terms of Use</a></li>
+                            <li><a href="https://openai.com/policies/service-terms/">OpenAI Service Terms</a></li>
+                            <li><a href="https://opper.ai/privacy-policy">Opper Privacy Policy</a></li>
+                            <li><a href="https://opper.ai/terms-of-service">Opper Terms of Service</a></li>
+                            <li><a href="https://opper.ai/legal">Opper legal documents</a></li>
+                        </ul>
+                        <p>Review the applicable policies before signing in or sending sensitive information.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Other network connections</h2>
+                        <ul>
+                            <li>Context7 tools send library names and documentation queries to <code>context7.com</code>.</li>
+                            <li>HTTP fetch and web-to-Markdown tools connect to URLs requested by you or selected by the agent. The destination receives the request URL, headers, body, and normal connection information.</li>
+                            <li>Mini Apps can load resources from listed content delivery and font services. Other detected external origins require in-app approval.</li>
+                            <li>Installing Gemma-4-E2B downloads the model from Hugging Face. Inference with the installed LiteRT model stays on-device.</li>
+                            <li>Authentication pages, policies, the issue tracker, and other external links open outside the app and follow the destination's policies.</li>
+                        </ul>
+                        <p>Droiderix does not add its own analytics or advertising identifiers to these requests.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>V1 features not enabled</h2>
+                        <p>Play Store V1 does not enable remote or SSH workspaces, remote terminals, GitHub Copilot, custom API providers, remote agent backends, notification reading, calendar or location tools, Termux, scheduled or background agent automation, or provider-hosted cloud tools such as file search and code interpreter.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Permissions</h2>
+                        <p>Play Store V1 requests permissions needed for internet access, vibration, foreground data transfer, and user-requested exports on older Android versions. It does not request notification-listener, location, calendar, camera, microphone, or contacts permissions.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Retention and deletion</h2>
+                        <p>Local data remains until you delete it in Droiderix, clear app storage, or uninstall the app. Logging out removes credentials for that provider. Exported backups and files shared to other apps must be deleted separately.</p>
+                        <p>Data sent to an inference provider or website is retained under that service's policies and account controls. Deleting local Droiderix data does not delete provider-side data.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Analytics, advertising, and sale</h2>
+                        <p>Droiderix does not include an analytics SDK, advertising SDK, or third-party crash-reporting SDK. We do not sell personal data. Google Play and Android may process installation and diagnostic information under Google's policies independently of Droiderix.</p>
+                    </section>
+
+                    <section class="legal-section">
+                        <h2>Changes</h2>
+                        <p>We may update this policy when the Play Store feature set or data handling changes. The effective date identifies the current version.</p>
+                    </section>
+
+                    <footer class="legal-contact">
+                        Privacy questions: open an issue on the Droiderix GitHub repository. Do not include credentials, private code, prompts, or other sensitive information in issues.
+                    </footer>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
