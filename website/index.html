@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Droiderix | Android-Integrated AI Agent</title>
+    <meta name="description" content="A local-first coding agent for Android with local workspaces, Mini Apps, hosted model options, and optional on-device Gemma inference.">
+    <title>Droiderix | Local-First Coding Agent for Android</title>
     <link rel="icon" type="image/png" href="droiderix-logo-gray.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,9 +51,9 @@
 
             <div class="content-scroll">
                 <section id="hero" class="section-hero fade-in">
-                    <div class="hero-badge">ANDROID-INTEGRATED AI AGENT</div>
-                    <h1>Agent-powered control of your Android.</h1>
-                    <p class="hero-subtext">Generate runnable mini-apps from natural language, then use the same agent runtime to operate them inside local or remote workspaces. Droiderix combines mini-app creation, shell tooling, and Android background services in one app, using your existing Codex or GitHub Copilot subscription for inference.</p>
+                    <div class="hero-badge">LOCAL-FIRST ANDROID CODING AGENT</div>
+                    <h1>Build from your phone, not around it.</h1>
+                    <p class="hero-subtext">Chat with an agent inside a local workspace, edit files, and turn ideas into runnable Mini Apps. Choose ChatGPT/Codex, fund hosted models with Opper Wallet, or run Gemma on-device on supported Android hardware.</p>
                     <div class="hero-actions">
                         <a href="#pricing" class="btn btn-primary">Initialize Access</a>
                         <a href="#capabilities" class="btn btn-secondary">Explore Capabilities</a>
@@ -90,7 +91,7 @@
                         </div>
                         <div class="panel screenshot-note">
                             <h3>Agent Chat</h3>
-                            <p>Run tasks through workspace-scoped chat sessions backed by your own Codex or GitHub Copilot access.</p>
+                            <p>Run tasks in persistent, workspace-scoped chats using your selected hosted or on-device model.</p>
                         </div>
                         <div class="panel screenshot-note">
                             <h3>Mini-App Generator</h3>
@@ -125,32 +126,32 @@
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2L14.5 22M5 8l-3 4 3 4M19 8l3 4-3 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
-                            <h3>Workspace Architecture</h3>
-                            <p>Operate inside local app-data workspaces or configured SSH workspaces, each with persistent chat sessions and scoped file access.</p>
+                            <h3>Local Workspaces</h3>
+                            <p>Keep each project in its own app-managed workspace with scoped file access, persistent chats, drafts, and run state.</p>
                         </div>
 
                         <div class="panel capability-panel">
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 17L10 11L4 5M12 19H20" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
-                            <h3>Shell &amp; SSH Access</h3>
-                            <p>Execute commands through Termux integration for local shell tasks or keep remote SSH terminal sessions active with foreground service support.</p>
+                            <h3>Focused Agent Tools</h3>
+                            <p>Let the agent work with local files, local git status and diffs, memory, clipboard, HTTP fetches, web-to-Markdown, and device status.</p>
                         </div>
 
                         <div class="panel capability-panel">
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
-                            <h3>Pluggable AI Backends</h3>
-                            <p>Run a local agent harness inside the Android app and connect it to inference from your existing Codex or GitHub Copilot subscription. One of those subscriptions is required to use Droiderix.</p>
+                            <h3>Choose Your Model Path</h3>
+                            <p>Sign in with ChatGPT/Codex, use Opper Wallet to access hosted models, or install Gemma-4-E2B for local LiteRT inference on supported devices.</p>
                         </div>
 
                         <div class="panel capability-panel">
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6V12L16 14M22 12A10 10 0 1 1 2 12A10 10 0 0 1 22 12Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
-                            <h3>Scheduled Automation</h3>
-                            <p>Launch agent runs through scheduled jobs and background services, with persisted run state and user-visible notifications while work continues.</p>
+                            <h3>On-Device Gemma</h3>
+                            <p>Download the optional Gemma-4-E2B model once, then keep prompts and inference on your device without a hosted model connection.</p>
                         </div>
 
                         <div class="panel capability-panel">
@@ -158,15 +159,15 @@
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4H19V20L12 16L5 20V4Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
                             <h3>Local-First Persistence</h3>
-                            <p>Chats, runs, schedules, and workspace metadata are stored on-device with SQLite and secure storage rather than depending on a constant cloud session.</p>
+                            <p>Workspaces, chats, memories, settings, and Mini App permissions stay in app-managed storage. Provider credentials use Android secure storage.</p>
                         </div>
 
                         <div class="panel capability-panel">
                             <div class="panel-icon">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7V3M16 7V3M4 11H20M6 5H18A2 2 0 0 1 20 7V19A2 2 0 0 1 18 21H6A2 2 0 0 1 4 19V7A2 2 0 0 1 6 5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </div>
-                            <h3>System Integrations</h3>
-                            <p>Connect workflows to Android notifications, calendar access, file tools, git operations, and mini-app runtime features inside the existing app host.</p>
+                            <h3>Backup &amp; Restore</h3>
+                            <p>Export an explicit backup when you need one and restore your local Droiderix data without depending on a Droiderix cloud account.</p>
                         </div>
                     </div>
                 </section>
@@ -181,13 +182,13 @@
                         <div class="panel comparison-highlight comparison-highlight-primary">
                             <div class="comparison-kicker">Why Droiderix</div>
                             <h3>Use your phone as the agent host</h3>
-                            <p>No extra Mac mini, PC, or server to keep online. Droiderix runs the local agent harness inside your Android app and connects it to your existing Codex or GitHub Copilot subscription.</p>
+                            <p>No extra Mac mini, PC, or server to keep online. Droiderix runs the agent harness and local workspace directly on your Android device.</p>
                         </div>
 
                         <div class="panel comparison-highlight">
                             <div class="comparison-kicker">More Controlled</div>
                             <h3>Structured execution instead of a loose always-on assistant</h3>
-                            <p>Droiderix centers workspaces, explicit runs, scheduled jobs, and Android services. That gives users tighter control over what runs, when it runs, and where it can operate.</p>
+                            <p>Droiderix centers local workspaces, explicit runs, scoped tools, and Mini App permissions. You choose what runs and which project it can access.</p>
                         </div>
                     </div>
 
@@ -214,12 +215,12 @@
                                 <tr>
                                     <td>Autonomy style</td>
                                     <td>Always-on assistant behavior</td>
-                                    <td class="comparison-droiderix-cell">User-driven runs plus scheduled automation</td>
+                                    <td class="comparison-droiderix-cell">User-driven, workspace-scoped runs</td>
                                 </tr>
                                 <tr>
                                     <td>Where it runs</td>
                                     <td>Computer or server that you host</td>
-                                    <td class="comparison-droiderix-cell">Android device with local and SSH workspaces</td>
+                                    <td class="comparison-droiderix-cell">Android device with local app-managed workspaces</td>
                                 </tr>
                                 <tr>
                                     <td>Standout feature</td>
@@ -229,7 +230,7 @@
                                 <tr>
                                     <td>System integration</td>
                                     <td>Email, calendar, and chat-app workflows</td>
-                                    <td class="comparison-droiderix-cell">Termux shell, SSH, notifications, calendar, files, git, and scheduled runs</td>
+                                    <td class="comparison-droiderix-cell">Local files and git inspection, memory, web tools, device status, and Mini Apps</td>
                                 </tr>
                                 <tr>
                                     <td>Execution model</td>
@@ -239,7 +240,7 @@
                                 <tr>
                                     <td>Setup model</td>
                                     <td>Connects to external LLMs</td>
-                                    <td class="comparison-droiderix-cell">Local Android agent harness using your Codex or GitHub Copilot subscription</td>
+                                    <td class="comparison-droiderix-cell">ChatGPT/Codex, Opper Wallet, or optional on-device Gemma</td>
                                 </tr>
                                 <tr>
                                     <td>Hardware overhead</td>
@@ -259,49 +260,38 @@
                 <section id="pricing" class="section-pricing fade-in stagger-2">
                     <div class="section-title-wrap">
                         <h2>Access Plans</h2>
-                        <p class="text-muted">Includes a 7-day trial. Purchases are handled through Google Play in-app billing inside the Android app. Droiderix also requires your own Codex or GitHub Copilot subscription for inference.</p>
+                        <p class="text-muted">Try every v1 feature free for 7 days. Subscribe through Google Play if Droiderix earns a place on your phone. Hosted model subscriptions or usage are separate; on-device Gemma inference has no model usage fee.</p>
                     </div>
 
                     <div class="pricing-container">
                         <div class="panel pricing-panel">
                             <div class="tier-header">Monthly</div>
-                            <div class="tier-price">€4.99<span class="period">/mo</span></div>
+                            <div class="tier-price">€2.99<span class="period">/mo</span></div>
                             <ul class="tier-features">
-                                <li>Same app access as every plan</li>
-                                <li>Google Play in-app purchase</li>
-                                <li>7-day trial included</li>
+                                <li>All Play v1 features</li>
+                                <li>7-day free trial</li>
+                                <li>Cancel through Google Play</li>
                             </ul>
-                            <a href="https://play.google.com/store" class="btn btn-secondary w-full">View on Play Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.droiderix.app" class="btn btn-secondary w-full">View on Google Play</a>
                         </div>
 
                         <div class="panel pricing-panel featured-panel">
-                            <div class="featured-badge">Active Recommendation</div>
+                            <div class="featured-badge">Best Value</div>
                             <div class="tier-header">Annual</div>
-                            <div class="tier-price">€39.99<span class="period">/yr</span></div>
+                            <div class="tier-price">€24.99<span class="period">/yr</span></div>
                             <ul class="tier-features">
-                                <li>Same app access as every plan</li>
-                                <li>Google Play in-app purchase</li>
-                                <li>Best value for long-term use</li>
+                                <li>All Play v1 features</li>
+                                <li>Save 30% vs monthly</li>
+                                <li>7-day free trial</li>
                             </ul>
-                            <a href="https://play.google.com/store" class="btn btn-primary w-full">View on Play Store</a>
-                        </div>
-
-                        <div class="panel pricing-panel">
-                            <div class="tier-header">Lifetime</div>
-                            <div class="tier-price">€79.00<span class="period">/once</span></div>
-                            <ul class="tier-features">
-                                <li>Same app access as every plan</li>
-                                <li>Google Play in-app purchase</li>
-                                <li>Single one-time payment</li>
-                            </ul>
-                            <a href="https://play.google.com/store" class="btn btn-secondary w-full">View on Play Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.droiderix.app" class="btn btn-primary w-full">View on Google Play</a>
                         </div>
                     </div>
                 </section>
                 
                 <footer class="app-footer">
                     <div>DROIDERIX</div>
-                    <div class="text-muted">Workspace-based Android agent runtime with local persistence, shell and SSH tooling, and scheduled automation.<br>Built on .NET MAUI / Blazor. iOS support is planned for the future, with a more limited feature set due to platform restrictions.<br><a href="privacy.html">Privacy Policy</a></div>
+                    <div class="text-muted">Local-first Android coding agent with persistent workspaces, Mini Apps, hosted model options, and optional on-device Gemma.<br>Built with .NET MAUI and Blazor. No Droiderix cloud account, analytics SDK, or ads.<br><a href="privacy.html">Privacy Policy</a></div>
                 </footer>
             </div>
         </main>

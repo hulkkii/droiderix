@@ -24,6 +24,7 @@
     --accent: #034cff;
     --accent-strong: #89b5ff;
     --accent-soft: rgba(3, 76, 255, 0.15);
+    --success: #5ecf92;
 
     /* ── radii ── */
     --radius-xs: 0.125rem;
@@ -523,9 +524,10 @@ section {
 /* Pricing */
 .pricing-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
     gap: 1rem;
     align-items: start;
+    max-width: 640px;
 }
 
 .pricing-panel {
@@ -740,6 +742,7 @@ section {
         gap: 1rem;
         margin-bottom: 1.5rem;
     }
+    .pricing-container { grid-template-columns: 1fr; }
     .section-title-brand {
         flex-direction: row;
         align-items: center;
