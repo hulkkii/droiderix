@@ -27,7 +27,7 @@
                 <a href="#hero" class="nav-item active">Platform</a>
                 <a href="#screens" class="nav-item">Screens</a>
                 <a href="#capabilities" class="nav-item">Capabilities</a>
-                <a href="#comparison" class="nav-item">Comparison</a>
+                <a href="#models" class="nav-item">Model Options</a>
                 
                 <div class="nav-group-title">Subscriptions</div>
                 <a href="#pricing" class="nav-item">Access Tiers</a>
@@ -172,89 +172,42 @@
                     </div>
                 </section>
 
-                <section id="comparison" class="section-comparison fade-in stagger-2">
+                <section id="models" class="section-models fade-in stagger-2">
                     <div class="section-title-wrap">
-                        <h2>OpenClaw vs Droiderix</h2>
-                        <p class="text-muted">Different products, different strengths. OpenClaw is positioned as a personal AI assistant you use through chat apps, while Droiderix focuses on controlled Android-native workflows, workspaces, and mini-app generation on the device you already carry.</p>
+                        <h2>Choose Where Inference Runs</h2>
+                        <p class="text-muted">Droiderix does not operate an inference proxy. Use a hosted provider directly, choose models through Opper Wallet, or keep inference on your Android device.</p>
                     </div>
 
-                    <div class="comparison-highlights">
-                        <div class="panel comparison-highlight comparison-highlight-primary">
-                            <div class="comparison-kicker">Why Droiderix</div>
-                            <h3>Use your phone as the agent host</h3>
-                            <p>No extra Mac mini, PC, or server to keep online. Droiderix runs the agent harness and local workspace directly on your Android device.</p>
+                    <div class="model-paths">
+                        <div class="panel model-path model-path-primary">
+                            <div class="model-kicker">Europe-Hosted Options</div>
+                            <h3>Choose models with Opper Wallet</h3>
+                            <p>Top up your wallet and select from hosted providers and models, including Europe-hosted options when available. Requests go from Droiderix to Opper's gateway, which may route them to your selected model provider.</p>
                         </div>
 
-                        <div class="panel comparison-highlight">
-                            <div class="comparison-kicker">More Controlled</div>
-                            <h3>Structured execution instead of a loose always-on assistant</h3>
-                            <p>Droiderix centers local workspaces, explicit runs, scoped tools, and Mini App permissions. You choose what runs and which project it can access.</p>
+                        <div class="panel model-path">
+                            <div class="model-kicker">Direct Provider</div>
+                            <h3>Sign in with ChatGPT / Codex</h3>
+                            <p>Use your OpenAI access for hosted inference while Droiderix keeps the workspace and agent runtime on your phone. Prompts and requested context go directly to the provider, not through a Droiderix backend.</p>
+                        </div>
+
+                        <div class="panel model-path model-path-offline">
+                            <div class="model-path-heading">
+                                <div class="model-kicker">Fully On-Device</div>
+                                <h3>Take Gemma offline</h3>
+                            </div>
+                            <div class="model-path-copy">
+                                <p>On supported Android 12+ hardware, download Gemma-4-E2B once and run prompts and inference locally with LiteRT. No cloud login or model usage fee is required. Network tools connect only when you choose to use them.</p>
+                                <div class="model-facts" aria-label="On-device Gemma benefits">
+                                    <span>Local prompts</span>
+                                    <span>Local inference</span>
+                                    <span>No model usage fee</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="comparison-table-wrap panel">
-                        <table class="comparison-table">
-                            <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>OpenClaw</th>
-                                    <th class="comparison-droiderix-head">Droiderix</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Primary model</td>
-                                    <td>Messaging-first personal assistant</td>
-                                    <td class="comparison-droiderix-cell">Android-integrated agent runtime</td>
-                                </tr>
-                                <tr>
-                                    <td>Main interface</td>
-                                    <td>WhatsApp, Telegram, and other chat apps</td>
-                                    <td class="comparison-droiderix-cell">Dedicated Android app with chats, files, mini-apps, and settings</td>
-                                </tr>
-                                <tr>
-                                    <td>Autonomy style</td>
-                                    <td>Always-on assistant behavior</td>
-                                    <td class="comparison-droiderix-cell">User-driven, workspace-scoped runs</td>
-                                </tr>
-                                <tr>
-                                    <td>Where it runs</td>
-                                    <td>Computer or server that you host</td>
-                                    <td class="comparison-droiderix-cell">Android device with local app-managed workspaces</td>
-                                </tr>
-                                <tr>
-                                    <td>Standout feature</td>
-                                    <td>Chat-based assistant that acts through connected services</td>
-                                    <td class="comparison-droiderix-cell">Generate and run mini-app workflows directly inside the Android app</td>
-                                </tr>
-                                <tr>
-                                    <td>System integration</td>
-                                    <td>Email, calendar, and chat-app workflows</td>
-                                    <td class="comparison-droiderix-cell">Local files and git inspection, memory, web tools, device status, and Mini Apps</td>
-                                </tr>
-                                <tr>
-                                    <td>Execution model</td>
-                                    <td>General assistant acting through connected tools</td>
-                                    <td class="comparison-droiderix-cell">Workspace-scoped execution with explicit tools and services</td>
-                                </tr>
-                                <tr>
-                                    <td>Setup model</td>
-                                    <td>Connects to external LLMs</td>
-                                    <td class="comparison-droiderix-cell">ChatGPT/Codex, Opper Wallet, or optional on-device Gemma</td>
-                                </tr>
-                                <tr>
-                                    <td>Hardware overhead</td>
-                                    <td>Requires a separate hosted machine or always-on computer</td>
-                                    <td class="comparison-droiderix-cell">Runs on the Android phone you already use every day</td>
-                                </tr>
-                                <tr>
-                                    <td>Control posture</td>
-                                    <td>Assistant-first convenience</td>
-                                    <td class="comparison-droiderix-cell">More controlled execution through workspaces, tools, and explicit run flow</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <p class="model-note">Model availability, data residency, retention, and regional processing depend on the provider and model you select.</p>
                 </section>
 
                 <section id="pricing" class="section-pricing fade-in stagger-2">
